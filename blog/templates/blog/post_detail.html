@@ -10,8 +10,10 @@
                     {{ post.published_date }}
             </div>
         {% endif %}
-        <a href="{% url 'post_edit' pk=post.pk %}">  <i class="fa fa-arrow-right" style="color:blue">EDIT</i></a>
 
+        {% if user.is_authenticated %}
+            <a href="{% url 'post_edit' pk=post.pk %}">  <i class="fa fa-arrow-right" style="color:blue">EDIT</i></a>
+        {% endif %}
 
 
 
