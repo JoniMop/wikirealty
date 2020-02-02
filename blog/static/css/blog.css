@@ -27,9 +27,19 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px; 
+    align-content: left;
 
 }
 
 .post h1 a {
     color: black;
+}
+
+
+.post-form-blog textarea {
+    width: 100%;
+}
+
+.post-form-blog .btn-primary {
+    float: right;
 }
