@@ -1,0 +1,35 @@
+.page-header {
+    background-color: purple;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a {
+    color: #ffffff;
+    font-size: 35pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Tangerine', 'Inconsolata';  
+    font-size: 45px; 
+}
+
+.date {
+    color: grey;
+
+}
+
+.post {
+    margin-bottom: 70px; 
+
+}
+
+.post h1 a {
+    color: black;
+}
