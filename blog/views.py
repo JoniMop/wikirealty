@@ -4,6 +4,7 @@ from django.utils import timezone
 from .models import Post
 from .forms import PostForm
 
+
 # Create your views here.
 
 def post_list(request):
@@ -49,4 +50,7 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
         stuff_for_frontend = {'form':form, 'post':post}
     return render(request, 'blog/post_edit.html', stuff_for_frontend)
+
+
+
 

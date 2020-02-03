@@ -17,7 +17,11 @@
         {% if user.is_authenticated %}
             <a href="/" class="top-menu"><i class="fab fa-firstdraft"></i></a>
             <a href="{% url 'post_new' %}" class="top-menu"><i class="fa fa-plus fa-2x"></i></a>
-        
+           
+            <p class="top-menu">Hello, {{ user.username }} <small><a href="{% url 'logout' %}">(Logout)</a></small></p>
+           
+                
+
         {% else %}
             <a href="{% url 'login' %}" class="top-menu">Login<i class="fas fa-sign-in-alt fa-2x"></i></a>
         
